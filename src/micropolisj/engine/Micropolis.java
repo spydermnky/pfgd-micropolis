@@ -437,6 +437,9 @@ public class Micropolis
 	{
 		int myTile = eff.getTile(0, 0);
 		TileSpec ts = Tiles.get(myTile);
+		if (myTile == 44 || myTile == 45 || myTile == 46 || myTile == 47){
+			return true;
+		}
 		if (ts.canBulldoze) {
 			return true;
 		}

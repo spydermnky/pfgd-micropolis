@@ -1179,7 +1179,7 @@ public class Micropolis
 				}
 
 				if (plevel < 0)
-					plevel = 250; //?
+					plevel = 0; //pollution cant get negative
 
 				if (plevel > 255)
 					plevel = 255;
@@ -1470,6 +1470,7 @@ public class Micropolis
 		bb.put("STADIUM_FULL", new MapScanner(this, MapScanner.B.STADIUM_FULL));
 		bb.put("AIRPORT", new MapScanner(this, MapScanner.B.AIRPORT));
 		bb.put("SEAPORT", new MapScanner(this, MapScanner.B.SEAPORT));
+		bb.put("ECOPLANT", new MapScanner(this, MapScanner.B.ECOPLANT));
 
 		this.tileBehaviors = bb;
 	}

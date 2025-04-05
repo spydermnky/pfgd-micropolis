@@ -22,6 +22,7 @@
             "request": "launch",
             "mainClass": "micropolisj.build_tool.MakeTiles",
             "args": "resources/tiles.rc resources",
+            "vmArgs": "-Dcomplete_batch"
             
         }
     ]

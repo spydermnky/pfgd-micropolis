@@ -38,6 +38,7 @@ class MapScanner extends TileBehavior
 		NUCLEAR,
 		FIRESTATION,
 		POLICESTATION,
+		ECOPLANT,
 		STADIUM_EMPTY,
 		STADIUM_FULL,
 		AIRPORT,
@@ -71,6 +72,8 @@ class MapScanner extends TileBehavior
 			return;
 		case POLICESTATION:
 			doPoliceStation();
+		case ECOPLANT:
+			doEcoPlant();
 			return;
 		case STADIUM_EMPTY:
 			doStadiumEmpty();
@@ -250,6 +253,14 @@ class MapScanner extends TileBehavior
 		}
 
 		city.policeMap[ypos/8][xpos/8] += z;
+	}
+
+	void doEcoPlant()
+	{
+		boolean powerOn = checkZonePower();
+		if ((city.cityTime % 8) == 0) {
+			repairZone(ECOPLANT, 3);
+		}
 	}
 
 	void doStadiumEmpty()

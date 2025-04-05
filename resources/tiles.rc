@@ -1014,7 +1014,7 @@
 961   ecoplant@16,0            (conducts)
 962   ecoplant@32,0            (conducts)
 963   ecoplant@0,16            (conducts)
-964   ecoplant@16,16     (zone)(conducts)(building=3x3)(behavior=POLICESTATION)(description=#17)
+964   ecoplant@16,16     (zone)(conducts)(building=3x3)(behavior=ECOPLANT)(description=#17)(pollution=-350)
 965   ecoplant@32,16           (conducts)
 966   ecoplant@0,32            (conducts)
 967   ecoplant@16,32           (conducts)
